@@ -1,0 +1,6 @@
+<li>
+  <span (click)="clickHandler($event)" class="tick" *ngIf=item.done>&#9745;</span>
+  <span (click)="clickHandler($event)" class="tick" *ngIf=!item.done>&#9744;</span>
+  <span> {{item.description}}</span>
+  <a [routerLink]="['/edit', item.id]">edit</a>
+</li>
